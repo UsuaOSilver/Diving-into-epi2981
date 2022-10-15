@@ -6,7 +6,7 @@ import '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 
 import '../ERC2981Base.sol';
 
-contract ERC721WithEIP2981 is ERC721, ERC2981Base {
+contract ERC721WithEIP2981 is ERC721, ERC2981 {
 
   uint256 newTokenId;
   
@@ -16,7 +16,7 @@ contract ERC721WithEIP2981 is ERC721, ERC2981Base {
   constructor(string memory _name, string memory _symbol) ERC721(_name, _symbol) {}
   
   /**
-   * @dev See {IERC165-supportsInterface}.
+   * @dev See {IERC2981-supportsInterface}.
    */
   function supportsInterface(bytes4 interfaceId)
       public
@@ -31,13 +31,13 @@ contract ERC721WithEIP2981 is ERC721, ERC2981Base {
    * @notice Sets the contract-wide royalty info.
    * @dev This function should implement onlyOwner modifier in production.
    * @param receiver        The royalties recipient
-   * @param feeBasisPoints  Royalties value 
+   * @param amount  Royalties value 
    */
-  function setRoyaltyInfo(address receiver, uint96 feeBasisPoints)
+  function setRoyalty(address receiver, uint96 amount)
       external
       /*onlyOwner*/
   {
-      _setDefaultRoyalty(receiver, feeBasisPoints);
+      _setRoyalty(receiver, amount);
   }
   
   /**
@@ -46,7 +46,7 @@ contract ERC721WithEIP2981 is ERC721, ERC2981Base {
    */
   function mint(address _to) external {
       uint256 _tokenId = newTokenId;
-      _safeMint(to, _tokenId, '');
+      _safeMint(_to, _tokenId, '');
 
       newTokenId = _tokenId + 1;
   }
