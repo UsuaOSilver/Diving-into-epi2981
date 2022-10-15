@@ -28,7 +28,7 @@ EIP-2981 is a universal royalty standard and is not limited to the implementatio
 
 View the Github repo with the source code [here](https://github.com/UsuaOSilver/crystalize.dev-research/tree/main/contracts).
 
-### Let’s start with **IERC2981.sol**
+### 📍 Let’s start with **IERC2981.sol**
 
      interface IERC2981 is IERC165 {
 
@@ -39,7 +39,7 @@ View the Github repo with the source code [here](https://github.com/UsuaOSilver/
      }
      
 
-### Now we put it into implementation with **ERC2981.sol**
+### 📍 Now we put it into implementation with **ERC2981.sol**
 
 The 2 most important funtions are `supportInterface()` & `royaltyInfo()`.     
 
@@ -110,7 +110,7 @@ The 2 most important funtions are `supportInterface()` & `royaltyInfo()`.
          }
      }
      
-### Now let see EIP-2981 in action supporting an ERC721 contract.
+### 📍 Now let see EIP-2981 in action supporting an ERC721 contract.
      
      // SPDX-License-Identifier: MIT
 
@@ -181,6 +181,8 @@ and we'll come back for a recap 🏁.
 Without an agreement on the way to share royalty information across platforms, it makes colleting ongoing funding hard for artists and creators and therefore, slows down the adoption of NFTs and Web3 in general.
 
 Providing NFT marketplaces with a single universal royalty payment standard not only makes it easier for artists and creators, but also benefit the entire NFT ecosystem.
+
+--------
 
 ### Citation
 
