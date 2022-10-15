@@ -15,6 +15,18 @@ abstract contract ERC2981Base is IERC2981, ERC165 {
     RoyaltyInfo private _RoyaltyInfo;
     mapping(uint256 => RoyaltyInfo) private _tokenToRoyaltyInfo;
 
+    /**
+     * @dev See {IERC165-supportsInterface}.
+     */
+    function supportsInterface(bytes4 interfaceId) 
+        public 
+        view 
+        virtual 
+        override(IERC165, ERC165) 
+        returns (bool) 
+    {
+        return interfaceId == type(IERC2981).interfaceId || super.supportsInterface(interfaceId);
+    }
     
     /**
      * @dev Sets the contract-wide royalty information (all ids).
