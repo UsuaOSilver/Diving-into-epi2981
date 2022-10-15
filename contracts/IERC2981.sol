@@ -17,7 +17,7 @@ pragma solidity >=0.8.0 <0.9.0;
 import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 
 ///
-/// @dev Interface for the NFT Royalty Standard
+/// @dev Interface for the ERC2981 - NFT Royalty Standard
 ///
 
 interface IERC2981 is IERC165 {
