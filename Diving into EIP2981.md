@@ -101,12 +101,6 @@ and we'll come back for a recap 🏁.
     
 ## **Summary**
 
-###  The importance of EIP-2981
-
-Without an agreement on the way to share royalty information across platforms, it makes colleting ongoing funding hard for artists and creators and therefore, slows down the adoption of NFTs and Web3 in general.
-
-Providing NFT marketplaces with a single universal royalty payment standard not only makes it easier for artists and creators, but also benefit the entire NFT ecosystem.
-
 ### The current situation
 
 At the time of this writing, EIP-2981 is still not supported widely by platforms. 
@@ -121,7 +115,13 @@ Along with EIP-2981, there are also other token specs such as SuperRare, Rarible
 
 ![image](https://user-images.githubusercontent.com/48362877/196010077-b1a803bf-058c-41de-aae4-e660e4bbcf4f.png)
 
-Another great tool built by Manifold.xyz in collaboration with marketplaces namely Foundation, Nifty Gateway, OpenSea, Rarible and SuperRare, is [Royalty Registry](https://royaltyregistry.xyz/lookup). It helps close the gap between the NFT with different royalty specs and even the old NFTs without an on-chain royalty support feature.
+Another great tool built by Manifold.xyz in collaboration with marketplaces namely Foundation, Nifty Gateway, OpenSea, Rarible and SuperRare, is [Royalty Registry](https://royaltyregistry.xyz/lookup). It helps close the gap between the NFTs with different royalty specs and even onboard the old NFTs without an on-chain royalty support feature.
+
+###  The importance of EIP-2981
+
+Without an agreement on the way to share royalty information across platforms, it makes colleting ongoing funding hard for artists and creators and therefore, slows down the adoption of NFTs and Web3 in general.
+
+With EIP-2981 providing NFT marketplaces with a single universal royalty payment standard not only makes it easier for artists and creators, but also benefit the entire NFT ecosystem in general.
 
 --------
 
