@@ -1,22 +1,22 @@
 # Diving into EIP-2981
 
+Despite the popularity of NFT with many of them traded many times across different platforms, there has not been a standard way to easily and consistently transfer the royalty information to ensure artists and creators receive their set royalty across diferrent on-chain and off-chain marketplaces.
+
 ![image](https://user-images.githubusercontent.com/48362877/196007439-850c1527-4c23-4a07-92aa-f8ae279f1e98.png)
 
-NFT Royalty has been a hot topic lately across Twitter as collection such as DeGod experimenting with 0% royalty and exchange implements optional royalty. 
+Royalty is an important topic as it is one of the largest source of continuous support for the artists and creators. NFT Royalty has been a hot topic lately across Twitter as collection such as DeGod experimenting with 0% royalty and exchange implements optional royalty. This fires an issue of royalty honor. 
 
 ![image](https://user-images.githubusercontent.com/48362877/196007510-69754078-652f-41e9-878d-310108d5835d.png)
 
 ![image](https://user-images.githubusercontent.com/48362877/196007781-edd17148-7e40-4232-afba-5fcafff6af22.png)
 
-This fires an issue of royalty honor. Royalty is an important topic as it is one of the largest source of continuous support for the artists and creators.
-
 ![image](https://user-images.githubusercontent.com/48362877/196007700-1df1bb6c-fdc4-4468-85e2-02856dc13109.png)
 
-I figured now is a good time to have a deeper understanding of EIP-2981 in the heat of this issue.
+In the heat of this issue, now is a good time to have a deeper understanding of EIP-2981. 
 
 In short, EIP-2981 is a way to record an NFT royalty on-chain.
 
-Then I started asking "**How has royalty been kept track of?**"
+So **how has royalty been kept track of?**
 
 Well, there are various royalty systems depends on the NFT marketplace created for the purpose of enforcing and tracking royalty. Platforms such as Manifold, Rarible, and Zora offer royalty options, but others don’t. therefore, users need to be aware of the terms when they resells their NFTs outside of the original platform. 
 
@@ -24,11 +24,7 @@ On the other hand, resellers have also bypassed the attached royalty through off
 
 With the current situation, there is clearly a problem that needs to be addressed.
 
-**The problem**
-
-Despite the popularity of NFT with many of them traded many times across different platforms, there has not been a standard way to easily and consistently transfer the royalty information to ensure artists and creators receive their set royalty across diferrent on-chain and off-chain marketplaces.
-
-The inefficient way of transfering royalty information has led to the proposal of EIP-2981.
+And the inefficient way of transfering royalty information has led to the proposal of EIP-2981.
 
 ## 👑 What is EIP-2981? 
 
