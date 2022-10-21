@@ -1,10 +1,10 @@
 # Diving into EIP-2981
 
-Despite the popularity of NFT with many of them traded many times across different platforms, there has not been a standard way to easily and consistently transfer the royalty information to ensure artists and creators receive their set royalty across diferrent on-chain and off-chain marketplaces.
+Despite the popularity of NFT with many of them traded many times across different platforms, there has not been a standard way to easily and consistently transfer the royalty information to ensure artists and creators receive their set royalty across different on-chain and off-chain marketplaces.
 
 ![image](https://user-images.githubusercontent.com/48362877/196007439-850c1527-4c23-4a07-92aa-f8ae279f1e98.png)
 
-Royalty is an important topic as it is one of the largest source of continuous support for the artists and creators. NFT Royalty has been a hot topic lately across Twitter as collection such as DeGod experimenting with 0% royalty and exchange implements optional royalty. This fires an issue of royalty honor. 
+Royalty is an important topic as it is one of the largest source of continuous support for the artists and creators. NFT Royalty has been a hot topic lately across Twitter as collection such as DeGods experimenting with 0% royalty and exchange implements optional royalty. This fires an issue of royalty honor. 
 
 ![image](https://user-images.githubusercontent.com/48362877/196007510-69754078-652f-41e9-878d-310108d5835d.png)
 
@@ -18,13 +18,13 @@ In short, EIP-2981 is a way to record an NFT royalty on-chain.
 
 So **how has royalty been kept track of?**
 
-Well, there are various royalty systems depends on the NFT marketplace created for the purpose of enforcing and tracking royalty. Platforms such as Manifold, Rarible, and Zora offer royalty options, but others don’t. therefore, users need to be aware of the terms when they resells their NFTs outside of the original platform. 
+Well, there are various royalty systems depends on the NFT marketplace created for the purpose of enforcing and tracking royalty. Platforms such as Manifold, Rarible, and Zora offer royalty options, but others don’t. therefore, users need to be aware of the terms when they resell their NFTs outside of the original platform. 
 
 On the other hand, resellers have also bypassed the attached royalty through off-chain marketplaces. 
 
 With the current situation, there is clearly a problem that needs to be addressed.
 
-And the inefficient way of transfering royalty information has led to the proposal of EIP-2981.
+And the inefficient way of transferring royalty information has led to the proposal of EIP-2981.
 
 ## 👑 What is EIP-2981? 
 
@@ -48,7 +48,7 @@ View the Github repo with the source code [here](https://github.com/UsuaOSilver/
 ![image](https://user-images.githubusercontent.com/48362877/196006164-692c8cf9-f8a4-4824-b287-e0e592aa130e.png)
 
      
-**The most important funtion of EIP-2981 is `royaltyInfo()`.** This function calculates the amount of royalty, maintains and returns the royalty information of all token ids of the contract.
+**The most important function of EIP-2981 is `royaltyInfo()`.** This function calculates the amount of royalty, maintains and returns the royalty information of all token ids of the contract.
 
      function royaltyInfo(uint256 _tokenId, uint256 _salePrice) 
          public 
@@ -68,7 +68,7 @@ View the Github repo with the source code [here](https://github.com/UsuaOSilver/
          return (royalty.receiver, royaltyAmount);
      }
      
-This function gives the contract the flexibility to modifide any information related to the NFT in the future. It can be excluded from the source code if the information should be fixed through time. 
+This function gives the contract the flexibility to modify any information related to the NFT in the future. It can be excluded from the source code if the information should be fixed through time. 
      
      function _setRoyalty(address _receiver, uint96 _amount) internal virtual {
          require(_amount <= 10000, "ERC2981: royalty fee exceeds salePrice");
@@ -107,7 +107,7 @@ At the time of this writing, EIP-2981 is still not supported widely by platforms
 
 Coming back to the optional royalty topic that has been going on over Twitter, the discussion [here](https://eips.ethereum.org/EIPS/eip-2981#optional-royalty-payments[Rationale]) may help you to have a better understanding of the nature of ERC-2981. 
 
-The standard is only a way to capture the royalty information and does not enforce its payment. It is then up to the martketplaces to honor and pay royalties together with the sales. 
+The standard is only a way to capture the royalty information and does not enforce its payment. It is then up to the marketplaces to honor and pay royalties together with the sales. 
 
 ### Looking into the future
 
